@@ -1,0 +1,65 @@
+h1, h2, h3 {
+  text-align: center;
+  color: gray;
+}
+
+div.played .inner {
+  text-align: center;
+  width: 30em;
+  min-height: 1em;
+  margin: 2em auto 3em auto;
+  border: 2px dotted gray;
+  font-size: 0.8em;
+}
+
+div.keyboard {
+  display: flex;
+  align-item: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+div.keyboard .inner {
+  display: flex;
+}
+
+div.key {
+  text-align: center;
+  border: 1px solid black;
+  width: 40px;
+  height: 100px;
+}
+
+div.key-pitch {
+  margin-top: 25px;
+}
+
+div.key-name {
+  font-size: 0.7em;
+  color: gray;
+}
+
+div.key.isBlackKey {
+  background-color: black;
+  color: white;
+  /* height: 60px; */
+}
+
+div.key.isBlackKey.key-name {
+  font-weight: bold;
+  color: gray;
+}
+
+div.key.isPressed,
+div.key.isBlackKey.isPressed {
+  background-color: yellow !important;
+  color: black !important;
+}
+
+.keyboard-layout {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.keyboard-layout a {
+  color: gray;
+}

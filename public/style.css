@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* remove the outline of chrome when focusing */
+input:focus {
+  outline: none;
+}
+
+nav {
+  height: 100%;
+  width: 15rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  overflow-x: hidden;
+  padding-top: 3rem;
+}
+
+nav .nav-tot-cnt {
+  padding: 0.5rem 0;
+
+  text-align: center;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+nav .nav-tot-cnt span {
+  font-weight: bold;
+}
+
+nav ul {
+  margin: 0;
+  margin-bottom: 4rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav a,
+nav #nav-list-add {
+  display: block;
+  padding: 0.65rem 3rem 0.65rem 2rem;
+
+  font-size: 1.2rem;
+
+  cursor: pointer;
+}
+
+nav #nav-list-add {
+  width: 100%;
+  text-align: left;
+
+  background-color: transparent;
+  border: none;
+
+  font-weight: bold;
+  color: black;
+}
+
+nav a {
+  color: rgb(64, 64, 64);
+  text-decoration: none;
+}
+
+nav #nav-list-add:hover,
+nav li.active,
+nav li:hover {
+  background-color: #f5f5f5;
+}
+
+nav li {
+  position: relative;
+}
+
+nav .list-remove {
+  display: none;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 3rem;
+  padding: 0;
+
+  font-size: 2rem;
+  color: #cc9a9a;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+nav .list-remove:hover {
+  color: red;
+}
+
+#todo {
+  margin-left: 15rem; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+#todo h2 {
+  margin: 1rem;
+  text-align: center;
+  font-size: 5rem;
+  line-height: 2rem;
+  color: lightblue;
+}
+
+#todo h2 input {
+  text-align: center;
+  width: calc(100% - 2rem);
+  font-size: 5rem;
+  padding: 0.5rem;
+  color: lightblue;
+  background-color: transparent;
+  border: none;
+}
+
+#todo h2 input:hover,
+#todo h2 input:focus {
+  background-color: white;
+}
+
+#todo {
+  margin-left: 15rem; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+#todo ul {
+  margin: 2rem auto;
+  max-width: 30rem;
+
+  list-style-type: none;
+  border: 2px solid lightblue;
+  padding: 0;
+  background-color: white;
+}
+
+#todo li {
+  position: relative;
+  border-bottom: 1px solid lightblue;
+}
+
+#todo #todo-add,
+#todo .todo-edit {
+  display: block;
+  border: none;
+  font-size: 1.2rem;
+}
+
+#todo #todo-add {
+  margin: 1rem;
+  width: calc(100% - 2rem);
+  color: #646464;
+}
+
+#todo #todo-add:placeholder {
+  color: grey;
+}
+
+#todo .todo-edit {
+  margin: 0 2.5rem 0 4rem;
+  padding: 1rem 0;
+  width: calc(100% - 7.5rem);
+  color: #404040;
+}
+
+#todo .todo-edit:hover,
+#todo .todo-edit:focus {
+  background-color: #e5e5e5;
+}
+
+#todo .todo-check {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+
+  width: 1.3em;
+  height: 1.3em;
+
+  cursor: pointer;
+}
+
+#todo .todo-remove {
+  display: none;
+
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  height: 100%;
+  width: 2rem;
+
+  font-size: 2rem;
+  color: #cc9a9a;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+#todo .todo-remove:hover {
+  color: red;
+}
+
+
+#todo .footer {
+  padding: 0.7rem;
+}
+
+#todo #sum,
+#todo #filters {
+  display: inline;
+}
+
+#todo #sum {
+  font-size: 0.8rem;
+  color: rgb(128, 128, 128);
+}
+
+#todo #sum span {
+  font-weight: bold;
+}
+
+#todo #filters {
+  position: absolute;
+  right: 1rem;
+  top: 0.7rem;
+}
+
+#todo #filters button {
+  background-color: transparent;
+  border: none;
+  color: rgb(128, 128, 128);
+
+  cursor: pointer;
+}
+
+#todo #filters button.active {
+  border: 1px solid lightblue;
+  border-radius: 5px;
+}

@@ -2,7 +2,7 @@
 
 Play piano with mouse and keyboard!
 
-![demo of node-piano](https://imgur.com/KSrTz98.png)
+![demo of node-piano](https://imgur.com/YPvOD8x.png)
 
 ## Commands to install:
 
